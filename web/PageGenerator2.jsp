@@ -1,8 +1,3 @@
-<%-- 
-    Document   : PageGenerator2
-    Created on : Jan 27, 2016, 3:52:01 PM
-    Author     : John Slowik <jslowik@my.wctc.edu>
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
