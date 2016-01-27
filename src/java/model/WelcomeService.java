@@ -17,9 +17,9 @@ public class WelcomeService {
         String timeOfDay;
         
 
-        if(time.isBefore(LocalTime.MIDNIGHT) && time.getHour() > 17){
+        if(time.getHour() > 16){
             timeOfDay = "evening";
-        } else if (time.getHour() <= 17 && time.getHour() >= 12){
+        } else if (time.getHour() <= 16 && time.getHour() >= 12){
             timeOfDay = "afternoon";
         } else if (time.getHour() <= 11) {
             timeOfDay = "morning";
@@ -32,5 +32,6 @@ public class WelcomeService {
     
     public String welcomeName(String name){
         return "Good " + timeOfDay(LocalTime.now()) + ", " + name + ". How are you?";
+        
     }
 }
