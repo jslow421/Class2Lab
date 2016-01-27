@@ -19,7 +19,7 @@ import model.WelcomeService;
  *
  * @author John Slowik <jslowik@my.wctc.edu>
  */
-@WebServlet(name = "GreetingController", urlPatterns = {"/greet"})
+@WebServlet(name = "GreetingController", urlPatterns = {"/greeter"})
 public class GreetingController extends HttpServlet {
 
     /**
@@ -43,7 +43,7 @@ public class GreetingController extends HttpServlet {
             request.setAttribute("myMsg", responseMsg);
             
             RequestDispatcher view =
-                    request.getRequestDispatcher("/welcomeResponse.jsp");
+                    request.getRequestDispatcher("/welcomeresponse.jsp");
             view.forward(request, response);
             
         } catch(Exception e) {
