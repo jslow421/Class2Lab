@@ -36,7 +36,7 @@ public class PageGenerator extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>PageGenerator</title>");            
+            out.println("<title>PageGenerator</title>");
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet PageGenerator at " + request.getContextPath() + "</h1>");
